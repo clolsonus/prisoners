@@ -12,7 +12,7 @@
 import random
 
 # total number of prisoners
-num = 1000
+num = 100
 
 # total number of simulation runs
 runs = 1000
