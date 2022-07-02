@@ -4,7 +4,7 @@
 # The Riddle That Seems Impossible Even If You Know The Answer
 # https://www.youtube.com/watch?v=iSNsgj1OCLA
 
-# Simulating and alidating results!
+# Simulate riddle and validate results!
 
 import random
 
@@ -26,7 +26,8 @@ for run in range(runs):
     random.shuffle(boxes)
     #print(boxes)
 
-    # find loops
+    # find loops (not required to simulate the strategy, but interesting to see
+    # the loops exist as explained in the video)
     loops = []
     box_used = [False] * num
     while True:
