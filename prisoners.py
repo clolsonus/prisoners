@@ -4,12 +4,15 @@
 # The Riddle That Seems Impossible Even If You Know The Answer
 # https://www.youtube.com/watch?v=iSNsgj1OCLA
 
+# Please watch the video for the rules of the game so I don't have to retype
+# them here. :-)
+
 # Simulate riddle and validate results!
 
 import random
 
 # total number of prisoners
-num = 100
+num = 1000
 
 # total number of simulation runs
 runs = 1000
@@ -59,11 +62,11 @@ for run in range(runs):
         loops.append(loop)
     #print(loops)
 
-    # assertion that if all loops are length 50 or less, all prisoners will succeed
-    # in finding their numbers
+    # assertion that if all loops are length num/2 or less, all prisoners will
+    # succeed in finding their numbers
     success = True
     for loop in loops:
-        if len(loop) > 50:
+        if len(loop) > num/2:
             success = False
         #print("loop len:", len(loop))
     print("predicted success:", success)
