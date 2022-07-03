@@ -60,7 +60,7 @@ for run in range(runs):
         
         # add this completed loop to the list of loops
         loops.append(loop)
-    #print(loops)
+        print(loop)
 
     # assertion that if all loops are length num/2 or less, all prisoners will
     # succeed in finding their numbers
